@@ -55,6 +55,8 @@ public class SubClassTest {
 
         Assert.assertFalse(someObject instanceof  String);
 
+        Assert.assertEquals("com.glqdlt.ex.subclasswithsuperclass.SubClass",someObject.getClass().getName());
+
         SubClass sub3 = (SubClass) someObject;
 
         Assert.assertEquals(2,sub3.getSubNumber());
