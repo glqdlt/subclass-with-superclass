@@ -53,6 +53,7 @@ public class SubClassTest {
         Assert.assertTrue(someObject instanceof SuperClass);
         Assert.assertTrue(someObject instanceof SubClass);
 
+        Assert.assertFalse(someObject instanceof  String);
 
         SubClass sub3 = (SubClass) someObject;
 
