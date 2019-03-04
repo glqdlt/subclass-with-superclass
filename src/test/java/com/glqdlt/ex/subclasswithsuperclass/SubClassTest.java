@@ -65,4 +65,33 @@ public class SubClassTest {
         Assert.assertEquals("sub",sub3.getSubString());
 
     }
+
+    @Test(expected = ClassCastException.class)
+    public void name3() throws Exception {
+
+        SuperClass superClass = new SuperClass();
+        superClass.setSuperNumber(3);
+        superClass.setSuperString("super");
+
+//        throw ClassCastException
+        SubClass subClass = (SubClass) superClass;
+
+    }
+
+
+    @Test(expected = ClassCastException.class)
+    public void name4() throws Exception {
+
+        SuperClass superClass = new SuperClass();
+        superClass.setSuperNumber(3);
+        superClass.setSuperString("super");
+
+        Object object = superClass;
+
+        System.out.println(object.getClass().getName());
+
+
+//        throw ClassCastException
+        SubClass subClass = (SubClass) object;
+    }
 }
