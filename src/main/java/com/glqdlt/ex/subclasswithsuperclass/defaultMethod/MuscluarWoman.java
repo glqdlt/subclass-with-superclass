@@ -1,4 +1,4 @@
-package com.glqdlt.ex.subclasswithsuperclass.fuckinterface;
+package com.glqdlt.ex.subclasswithsuperclass.defaultMethod;
 
 /**
  * @author Jhun
